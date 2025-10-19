@@ -11,6 +11,8 @@ nav {background-color: #c79dd7; padding : 10px; margin-bottom : 30px;}
 nav a {color: #bae1ff ;}
 nav a:hover {background-color: #b6654f ;}
 
+.evenrow {background-color: lavender;}
+
 h1 {font-size: 2em;}
 
 h2 {font-size: 1.5em;}
