@@ -1,0 +1,31 @@
+/*CSS for Lab 08 */
+body {font-family: Georgia, serif; color: #000000;}
+
+h1, h2 {color: #ee5d6c ;}
+#skillsh1 {text-align: center;}
+
+body {background-color: #fff4e6;}
+
+body a{color: #96c3ae ;}
+a:visited {color: #c99789 ;}
+nav {background-color: #c79dd7; padding : 10px; margin-bottom : 30px;}
+nav a {color: #bae1ff ;}
+nav a:hover {background-color: #b6654f ;}
+
+.evenrow {background-color: #b0d0c1;}
+
+h1 {font-size: 2em;}
+
+h2 {font-size: 1.5em;}
+
+.right {float: right;}
+.left {float: left;}
+
+.row1, .row2 {display: flex; background-color: #e0d4e3; border-radius: 2em; padding: 1em; margin: 20px;}
+.row1 div, .row2 div {padding: 1em;}
+.row2 {justify-content: center;}
+
+.firstrow {display: flex; background-color: #e0d4e3; border-radius: 2em; padding: 1em; margin: 20px;}
+.skillstable div, .skillsimage div {padding: 1em;}
+.skillstable table {margin: 0 auto; flex-basis: 50%;}
+.skillsimage {text-align: center; flex-basis: 50%;}
