@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburger Menu</title>
+    <script>
+        function showNav() {
+            var nav = document.getElementById("navlinks");
+            if (nav.style.display === "none") {
+                nav.style.display = "block";
+            } else {
+                nav.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="boxit">
+        <img id="hamicon" onclick="showNav();" src="https://peopel-su.github.io/ist263/images/hamburger_icon.png" alt="hamburger icon" width="50" height="50">
+        <div id="navlinks" style="display:none;">
+            <a href="https://peopel-su.github.io/ist263/lab12/classnotes.html">Class Notes</a><br>
+            <a href="https://peopel-su.github.io/ist263/lab12/participation12.html">Participation 12</a><br>
+            <a href="https://peopel-su.github.io/ist263/lab11/lab11_preview.html">Lab 11</a><br>
+            <a href="https://peopel-su.github.io/ist263/lab11/participation11.html">Participation 11</a><br>
+        </div>
+    </div>
+</body>
+</html>
