@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Senior's Guide to Syracuse University</title>
+        <link rel="stylesheet" href="project_styles.css">
+        <script>
+            let slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("carouselimg");
+                    let dots = document.getElementsByClassName("dot");
+
+                    if (n > slides.length) { slideIndex = 1; }
+                    if (n < 1) { slideIndex = slides.length; }
+
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+
+                    slides[slideIndex - 1].style.display = "block";
+                    if(dots.length > 0) {
+                        dots[slideIndex - 1].className += " active";
+                    }
+                }
+        </script>
+    </head>
+    <body>
+    <nav>
+        <a href="index.html">Home</a> <span class="pipes">|</span>
+        <a href="advice.html">Everything I Wish I Knew as a Freshman</a> <span class="pipes">|</span>
+        <a href="recommendations.html">Things I Swear By</a> 
+    </nav>
+
+    <header>
+        <div class="banner">
+            <img class="bannerimg1" src="../Project/images/gradcap.png" alt="Icon of a graduation cap">
+            <h1>A Senior's Guide to Syracuse University</h1>
+            <img class="bannerimg2" src="../Project/images/orange.png" alt="Icon of an orange">
+        </div>
+    </header>
+
+    <main>
+    <hr>
+    <div class="carousel-container">
+        <div class="carouselimg" style="display:block">
+            <img src="../Project/images/campusphoto4.jpg" alt="Syracuse University Campus">
+        </div>
+        <div class="carouselimg">
+            <img src="../Project/images/friends1.png" alt="A picture of my friends and I">
+        </div>
+        <div class="carouselimg">
+            <img src="../Project/images/campusphoto1.png" alt="Campus Sunset">
+        </div>
+        <div class="carouselimg">
+            <img src="../Project/images/friends2.png" alt="A picture of my friends and I">
+        </div>
+        <div class="carouselimg">
+            <img src="../Project/images/campusphoto6.jpg" alt="Syracuse University Campus">
+        </div>
+        <div class="carouselimg">
+            <img src="../Project/images/campusphoto7.jpg" alt="Syracuse University Campus">
+        </div>
+        <div class="carouselimg">
+            <img src="../Project/images/friends3.png" alt="My friends and I in the snow">
+        </div>
+        <div class="carouselimg">
+            <img src="../Project/images/friends4.JPEG" alt="Friends at Green Lakes">
+        </div>
+        <div class="carouselimg">
+            <img src="../Project/images/campusphoto2.JPEG" alt="Syracuse University Campus">
+        </div>
+        <div class="carouselimg">
+            <img src="../Project/images/campusphoto5.jpg" alt="Syracuse University Campus">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div id="carouseldots">
+    <span class="dot" onclick="currentSlide(1)">🍊</span>
+    <span class="dot" onclick="currentSlide(2)">🍊</span>
+    <span class="dot" onclick="currentSlide(3)">🍊</span>
+    <span class="dot" onclick="currentSlide(4)">🍊</span>
+    <span class="dot" onclick="currentSlide(5)">🍊</span>
+    <span class="dot" onclick="currentSlide(6)">🍊</span>
+    <span class="dot" onclick="currentSlide(7)">🍊</span>
+    <span class="dot" onclick="currentSlide(8)">🍊</span>
+    <span class="dot" onclick="currentSlide(9)">🍊</span>
+    <span class="dot" onclick="currentSlide(10)">🍊</span>
+</div>
+
+    <hr>
+
+    <div id="p1p1">
+        <div class='text'>
+            <h2>WHO AM I?</h2>
+            <p>Hi! My name is Ines, and I’m a student at Syracuse University double majoring in Economics and Data
+            Analytics with a minor in Psychology. When I first got here my freshman year, I was overwhelmed by the
+            size of our campus, the number of student organizations, and just navigating college in general. Now
+            that I’m a senior (they’re not lying when they say that time flies by), I have a better handle on what it
+            means to be a student at Syracuse University, and I’ve figured out college so that you don’t have to on
+            your own! This site is where I’ll be documenting everything, I wish I knew as freshman, including my
+            survival guide to freshman year, tips, and recommendations. Enjoy! </p> </div>
+
+        <img src="../Project/images/whoami.JPG" alt="A photo of me in London" width="500">
+    </div>
+
+    <div id="p1p2">
+        <img src="../Project/images/campusphoto3.jpg" alt="Syracuse University Campus" width="700"> <br>
+        
+        <div class="text">
+            <h2>A GLIMPSE OF SYRACUSE UNIVERSITY</h2>
+            <p>Syracuse University is a private university in Syracuse, New York (aka upstate NY, so get ready for long
+            winters). It’s home to 13 schools and colleges, more than 300 student organizations, over 200 majors,
+            and a unique mascot, Otto the Orange! Whether you’re watching a game at the Dome, attending one of
+            our many free student events, or grabbing a bite on Marshall Street, there’s always something going on!</p>
+        </div>
+    </div>
+
+    <div id="p1p3">
+        <div class="text">
+            <h2>FROM ONE STUDENT TO ANOTHER </h2>
+            <p>As an international student from Morocco, I was nervous to move to a college alone and far away from
+            big cities. I was apprehending the typical things: choosing a major (I came here as an undecided
+            student), making friends, living in a dorm, and making the most of my education. However, the first
+            couple of days of Orientation Week confirmed that I had made the best decision for me. Although it
+            took me a couple of weeks to get into a routine, adapt to college-level courses, and find my place on
+            campus, it only took two days to establish that I had found my new home. <br><br>
+            During my sophomore year, I was a Peer Mentor to two groups of international students. I would meet
+            with them weekly and share information about important school resources like DegreeWorks and
+            BlackBoard, but I would also share my personal advice on life as an SU student. Therefore, I’m to share
+            that advice with the rest of you! <br><br>
+            Now that I’m starting my last year, I would honestly rank my experience at SU a 10/10. I’ve made
+            lifelong friends, joined incredible student organizations, networked with faculty and industry
+            professionals, and even studied abroad! I’ve compiled all my knowledge about SU into this website in
+            the hopes that your experience can be just as good as mine. </p>
+        </div>
+        <img src="../Project/images/thanksgiving.jpeg" alt="International Student Thanksgiving Dinner with my mentees" width="600">
+    </div>
+    </main>
+
+    <footer><hr>
+        <div class="text">
+            <span class="left">&copy; 2025 </span>
+            <span class="right">"If you're happy doing what you're doing, then nobody can tell you you're not successful." - Harry Styles</span>
+        </div>
+    </footer>
+    </body>
+</html>
