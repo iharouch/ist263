@@ -8,7 +8,7 @@ nav a:hover {background-color: #00A7E1 ;}
 .left {float: left; align-items: center; padding: 10px;}
 
 /*Body Background Color*/
-body {background-color: #ffd7b5; margin: 0; font-size: 1em;}
+body {background-color: #ffd7b5; margin: 0; font-size: 1.2em;}
 main img {border: 2px solid #0474BA;}
 
 /*Horizontal Lines*/
@@ -20,7 +20,7 @@ hr {background-color: black; height: 1px; border: none;}
 .bannerimg2 {width: 7em; height: auto; position: relative;}
 
 /*Page Titles*/
-h1 {text-align: center; font-size: 3.5em; font-family: cursive; color: #0474BA;}
+h1 {text-align: center; font-size: 3em; font-family: cursive; color: #0474BA;}
 h2 {color: #0474BA;}
 
 /*Image Carousel*/
@@ -73,20 +73,15 @@ h2 {color: #0474BA;}
 }
 
 /*Home Page*/
-#p1p1 {display: flex; align-items: center; gap: 60px; margin: 40px;}
-#p1p1 .text {max-width: 60%;}
-#p1p1 img {max-width: 45%; height: auto;}
-
-#p1p2 {display: flex; align-items: center; gap: 40px; margin: 40px;}
-#p1p2 .text {max-width: 60%;}
-#p1p2 img {max-width: 45%; height: auto;}
-
-#p1p3 {display: flex; align-items: center; gap: 60px; margin: 40px;}
-#p1p3 .text {max-width: 60%;}
-#p1p3 img {max-width: 45%; height: auto;}
+#p1p1, #p1p2, #p1p3 {display: flex; align-items: center; gap: 3em; margin: 2em;}
+#p1p1 .text, #p1p2 .text, #p1p3 .text {max-width: 60%;}
+#p1p1 img, #p1p2 img, #p1p3 img {max-width: 45%; height: auto;}
 
 @media (max-width:760px) {
                 nav {flex-direction: column; gap: 10px;} 
                 nav a {display: block; max-width: 100%;}
                 .pipes {display: none;}
+
+                #p1p1, #p1p2, #p1p3 {gap: 1em; margin: 1em;}
+                #p1p1 img, #p1p2 img, #p1p3 img {max-width: 35%; height: auto;}
             }
