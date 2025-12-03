@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main" class="skip">Skip to main content</a>
+    
+    <nav>
+        <a href="index.html">Home</a> <span class="pipes">|</span>
+        <a href="skills.html">Skills</a> <span class="pipes">|</span>
+        <a href="contact.html">Contact</a> <span class="pipes">|</span>
+        
+    </nav>
+
+    <header><a href="#main" class="skip">Skip to main content</a></header>
+
+    <main id="main">
+    <section id="contactinfo">
+    <h1>Contact</h1>
+
+    <div class="row1">
+        <div>
+    <h2>Address</h2>
+
+    <p>Ines Harouchi</p>
+
+    <p>343 Hinds Hall, <br>
+        Syracuse University, <br>
+        Syracuse, NY 13210
+    </p> </div>
+
+    <div><p><a href="mailto:iharouch@syr.edu">Ines Harouchi Email</a></p>
+    <p>
+        <a href="https://www.linkedin.com/in/inesharouchi" target="_blank">
+             My LinkedIn Profile <br><br>
+            <img src="../images/logo_resized.png" alt="LinkedIn Logo">
+        </a>
+    </p> </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row2">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5832.2854933942!2d-76.13853101200529!3d43.038427996719236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fb6ee26eb%3A0x9b9bf8a92f06f8f0!2s343%20Hinds%20Hall%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1757535410841!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div><h2>Book An Appointment</h2>
+        <form action="https://formspree.io/f/mrbawrva" method="POST">
+            <fieldset>
+                <legend>Appointment Details</legend>
+                <label for="fname">Full name (Last, First):</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <br>
+                <label for="reason">Reason For Appointment:</label><br>
+                <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+                <br>
+
+                <p>How would you like to meet:</p>
+                <input type="radio" id="location1" name="location" value="In-person">
+                <label for="location1">In-person</label>
+                <input type="radio" id="location2" name="location" value="Online">
+                <label for="location2">Online</label>
+                <br><br>
+
+                <label for="timeslot">Choose a timeslot:</label><br>
+                <select name="timeslot" id="timeslot">
+                <option value="monday">Monday 12-1pm</option>
+                <option value="monday2">Monday 2-3pm</option>
+                <option value="tuesday">Tuesday 12-1pm</option>
+                <option value="wednesday">Wednesday 12-1pm</option>
+                <option value="wednesday2">Wednesday 2-3pm</option>
+                <option value="thursday">Thursday 12-1pm</option>
+                <option value="friday">Friday 12-1pm</option>
+                </select>
+                <br><br>
+
+                <input type="submit" value="Send Form">
+            </fieldset>
+        </form></div>
+        </div>
+    </section>
+    </main>
+</body>
+
+</html>
