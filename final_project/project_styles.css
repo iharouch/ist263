@@ -1,0 +1,95 @@
+/* Navigation */
+nav {background-color: #FFA630; padding : 10px;}
+nav a {color: #0474BA ; padding: 10px;}
+nav a:hover {background-color: #00A7E1 ;}
+
+/*Footer*/
+.right {float: right; align-items: center; padding: 10px;}
+.left {float: left; align-items: center; padding: 10px;}
+
+/*Body Background Color*/
+body {background-color: #ffd7b5; margin: 0; font-size: 1.2em;}
+main img {border: 2px solid #0474BA;}
+
+/*Horizontal Lines*/
+hr {background-color: black; height: 1px; border: none;}
+
+/*Banners*/
+.banner {display: flex; align-items: center; justify-content: center; position: relative; gap: 30px;}
+.bannerimg1 {width: 8em; height: auto; position: relative;}
+.bannerimg2 {width: 7em; height: auto; position: relative;}
+
+/*Page Titles*/
+h1 {text-align: center; font-size: 3em; font-family: cursive; color: #0474BA;}
+h2 {color: #0474BA;}
+
+/*Image Carousel*/
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.carouselimg {
+  display: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.carouselimg img{
+    width: auto;
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.carouselimg.active {
+    display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#carouseldots {text-align: center;}
+
+.dot {cursor: pointer; font-size: 24px; margin: 0 4px; display: inline-block;}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*Home Page*/
+#p1p1, #p1p2, #p1p3 {display: flex; align-items: center; gap: 3em; margin: 2em;}
+#p1p1 .text, #p1p2 .text, #p1p3 .text {max-width: 60%;}
+#p1p1 img, #p1p2 img, #p1p3 img {max-width: 45%; height: auto;}
+
+@media (max-width:760px) {
+                nav {flex-direction: column; gap: 10px;} 
+                nav a {display: block; max-width: 100%;}
+                .pipes {display: none;}
+                .bannerimg1, .bannerimg2 {display: none;}
+
+                #p1p1, #p1p2, #p1p3 {gap: 1em; margin: 1em;}
+                #p1p1 img, #p1p2 img, #p1p3 img {max-width: 35%; height: auto;}
+            }
+
+/*Advice Page*/
+#topparagraph {border: 1px solid black; margin: 1em; padding: 1em;}
+#dorm {display: flex; margin: 1em;}
+#academics {display: flex; margin: 1em;}
+#involvement {display: flex; margin: 1em;}
+#resources {display: flex; margin: 1em;}
