@@ -2,6 +2,22 @@
 nav {background-color: #FFA630; padding : 10px;} 
 nav a {color: #1B2A41 ; padding: 10px;} 
 nav a:hover {background-color: #00A7E1 ;} 
+
+/*Skip to main content*/
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
  
 /*Footer*/
 .credits {margin: 0.5em;}
