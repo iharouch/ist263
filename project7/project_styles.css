@@ -78,7 +78,7 @@ h2 {color: #0474BA;}
 #p1p1 img, #p1p2 img, #p1p3 img {max-width: 45%; height: auto;}
 
 /*Advice Page*/
-#topparagraph {border: 1px solid black; margin: 1em; padding: 1em;}
+#topparagraph {border: 1px solid #0474BA; margin: 1em; padding: 1em; background-color: #fff5e6;}
 
 .sectiondivider {
   width: 95%;
@@ -116,11 +116,12 @@ h2 {color: #0474BA;}
 }
 
 .list-images-container .images {
-    flex: 0 0 25%;
+    flex: 1;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1em;
 }
 
 .list-images-container .images img {
@@ -157,6 +158,106 @@ h2 {color: #0474BA;}
   margin-bottom: 1em;
 }
 
+/*Recommendations Page*/
+#recstopparagraph {border: 1px solid #0474BA; margin: 1em; padding: 1em; background-color: #fff5e6; text-align: center;}
+
+/*Study Spots*/
+#studyspots {display: flex; align-items: center; gap: 6em; margin: 2em;}
+#studyspots .text {max-width: 50%;}
+#studyspots img {max-width: 30%; height: auto;}
+
+#studyspots li {
+  margin-bottom: 1em;
+}
+
+/*Food Recommendations*/
+#foodrecs {display: flex; 
+  align-items: center; 
+  gap: 5em; 
+  margin: 2em;
+}
+
+#foodrecs .text {
+  flex: 1;
+  max-width: 50%;
+  order: 2}
+
+#foodrecs .images {
+    flex: 0 0 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+    order: 1;
+}
+
+#foodrecs .images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#foodrecs li {
+  margin-bottom: 1em;
+}
+
+/*Game Day Traditions*/
+#gametraditions {
+  display: flex; 
+  align-items: center; 
+  gap: 1em; 
+  margin: 2em;}
+
+#gametraditions .text, #gametraditions .images {
+  flex: 1;
+  max-width: 100%; 
+  order: 1}
+
+#gametraditions .images {
+  display: flex;
+  gap: 1em;
+  order: 2;}
+
+#gametraditions img{
+  max-width: 48%; 
+  height: auto;
+}
+
+#gametraditions li {
+  margin-bottom: 1em;
+}
+
+/*Off-campus activities*/
+#offcampusactivities {display: flex; 
+  align-items: center; 
+  gap: 3em; 
+  margin: 2em;
+}
+
+#offcampusactivities .text {
+  flex: 1;
+  max-width: 50%;
+  order: 2
+}
+
+#offcampusactivities .images {
+    flex: 0 0 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+    order: 1;
+}
+
+#offcampusactivities .images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#offcampusactivities li {
+  margin-bottom: 1em;
+}
 
 @media (max-width:760px) {
                 nav {flex-direction: column; gap: 10px;} 
@@ -164,7 +265,7 @@ h2 {color: #0474BA;}
                 .pipes {display: none;}
                 .bannerimg1, .bannerimg2 {display: none;}
 
-                h1 {font-size: 2.5em;}
+                h1 {font-size: 2.5em; margin: 0.5em;}
 
                 .carousel-container {max-width: 90%;}
                 .carouselimg img {max-height: 250px;}
@@ -177,4 +278,21 @@ h2 {color: #0474BA;}
                 #p1p1 img, #p1p2 img, #p1p3 img {max-width: 100%;}
                 #p1p2 .text {order: 1}
                 #p1p2 img {order: 2}
+
+                .list-images-container {flex-direction: column; align-items: center; gap: 0em; margin-left: 0;}
+                #dormlist {max-width: 100%;}
+                #dorm .text {margin: 0 1em;}
+                
+                .list-images-container .images {display: grid; grid-template-columns: 1fr 1fr; gap: 1em; width: 100%; margin-top: 1em;}
+                .list-images-container .images img {width: 100%; height: auto;}
+
+                #involvement, #resources {flex-direction: column; gap: 1em; margin: 1em;}
+                #involvement .text, #resources .text {max-width: 100%}
+                #involvement img, #resources img {max-width: 100%;}
+                #llcvideo {max-width: 100%;}
+
+                #studyspots, #foodrecs, #gametraditions, #offcampusactivities {flex-direction: column; gap: 1em; margin: 1em;}
+                #studyspots .text, #foodrecs .text, #gametraditions .text, #offcampusactivities .text {max-width: 100%; order: 1;}
+                #studyspots img, #foodrecs img, #offcampusactivities img{max-width: 100%; order: 2;}
+                #gametraditions img {flex-direction: column;}
             }
